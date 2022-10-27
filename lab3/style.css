@@ -4,7 +4,9 @@ header {
     align-items: center;
 }
 }
-
+body {
+    margin: 0;
+}
 .menu {
     margin-left: auto;
     padding-right: 10%;
