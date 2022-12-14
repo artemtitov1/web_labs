@@ -1,0 +1,152 @@
+@font-face {
+	font-family: 'GolosTextWebVF';
+	src: 
+		url('materials/design/golos-text_vf.woff2') format('woff2'),
+		url('materials/design/golos-text_vf.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*{
+    margin: 0;
+    font-family: 'GolosTextWebVF';
+}
+
+/* header */
+
+header {
+    background-color: rgba(98, 76, 144, 1);
+    height: 80px;
+    display: grid;
+    justify-content: last baseline;
+}
+
+.header-items-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.header-items-wrapper img{
+    height: 50%;
+}
+
+.header-ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header-li a{
+    margin-left: 28px;
+    color: white;
+    font-weight: 500;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+main {
+    padding: 60px;
+    background-color: rgba(243, 243, 243, 1);
+}
+
+.rows {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+}
+
+.text-input-fields {
+    background-color: white;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom:20px;
+}
+
+input[type="text"] {
+    font-size: 17px;
+    font-weight: 400;
+    padding: 24px;
+    border:2px solid rgba(17, 34, 68, 0.5);
+    border-radius: 5px;
+    color: rgba(17, 34, 68, 1);
+}
+
+.input-field span {
+    color:rgba(17, 34, 68, 0.5)
+}
+
+.constraint img{
+    margin-right: 11px;
+}
+
+.constraint span {
+    color: rgba(60, 162, 85, 0.9);
+    /*color:rgba(238, 34, 34, 0.9);*/
+}
+
+.checkbox-field {
+    display: flex;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.checkbox-field span {
+    color: rgba(17, 34, 68, 1);
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    margin-right: 8px;
+}
+
+.register-button button {
+    padding: 20px 40px;
+    border: none;
+    border-radius: 7px;
+}
+
+.register-button button:disabled {
+    background-color: rgba(204, 204, 204, 1);
+}
+
+.register-button button:enabled {
+    background-color:rgba(98, 76, 144, 1);
+}
+
+.register-button span {
+    font-size: 15px;
+    color:white;
+}
+
+footer {
+    height: 80px;
+    background-color:rgba(243, 243, 243, 1);
+}
+
+.footer-wrapper{
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-refs a{
+    color:rgba(54, 106, 243, 1);
+    margin-right: 40px;
+}
+
+.footer-wrapper span {
+    color: rgba(153, 153, 153, 1);
+}

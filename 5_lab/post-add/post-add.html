@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-items-wrapper">
+        <img src="materials/design/logo.svg" alt="LogoImg" />
+        <ul class="header-ul">
+          <li class="header-li" id="user-profile-pic">
+            <img src="materials/design/i-user.svg" alt="UserImg" />
+          </li>
+          <li class="header-li" id="username">
+            <span>@UserAccountLogin</span>
+          </li>
+          <li class="header-li" id="new-post">
+            <button class="header-button"><span>Новая запись</span></button>
+          </li>
+          <li class="header-li">
+            <a class="header-link" id="logout" href="">Выйти</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1>Добавить запись</h1>
+      <form action="http://127.0.0.1:5500/post-add/post-add.html" method="post">
+        <div class="input-field">
+        <span>Заголовок</span>
+        <input type="text" size="255" name="post_header" required/>
+      </div>
+      <div class="input-field">
+        <span>Текст</span>
+        <textarea name="post_text" rows="7" required></textarea>
+      </div>
+      <div class="input-field">
+        <span>Выберите категорию</span>
+        <select name="post_category">
+          <option>Без категории</option>
+          <option>Программирование</option>
+          <option>Дизайн</option>
+          <option>Образование</option>
+          <option>Менеджмент</option>
+        </select>
+      </div>
+      <div class="input-field" >
+        <label for="file-upload">
+          <img src="materials/design/skrepka.svg">
+          <span>Прикрепите файл изображения</span>
+        </label>
+        <input type="file" accept="image/*" name="post_file_upload">
+      </div>
+        <button class="new-post-button" value="post-button" type="submit">
+          <span>Опубликовать</span>
+        </button>
+      </form>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-refs">
+          <a href="">Об авторе</a>
+          <a href="">Технологии</a>
+        </div>
+        <span>@blog, 2022</span>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

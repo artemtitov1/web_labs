@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-items-wrapper">
+        <img src="materials/design/logo.svg" alt="LogoImg" />
+        <ul class="header-ul">
+          <li class="header-li">
+            <img src="materials/design/i-user.svg" alt="UserImg" />
+          </li>
+          <li class="header-li">
+            <a class="header-link" id="login" href="">Войти</a>
+          </li>
+          <li class="header-li">
+            <a class="header-link" id="register" href="">Зарегистрироваться</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1>Регистрация</h1>
+      <form>
+        <div class="text-input-fields">
+          <div class="rows" id="1">
+            <div class="input-field">
+              <span>Имя</span>
+              <input type="text" name="name" />
+            </div>
+            <div class="input-field">
+              <span>Фамилия</span>
+              <input type="text" name="surname" />
+            </div>
+          </div>
+          <div class="rows" id="2">
+            <div class="input-field">
+              <span>Логин *</span>
+              <input type="text" name="login" />
+              <div class="input-constraints" id="login-constraints">
+                <div class="constraint">
+                  <img src="materials/design/i-accept.svg" alt="NO" />
+                  <span>Только буквы, цифры и символы @.+-_</span>
+                </div>
+                <div class="constraint">
+                  <img src="materials/design/i-accept.svg" alt="NO" />
+                  <span>Не более 150 символов</span>
+                </div>
+              </div>
+            </div>
+            <div class="input-field">
+              <span>E-mail</span>
+              <input type="text" name="email" />
+            </div>
+          </div>
+          <div class="rows" id="3">
+            <div class="input-field">
+              <span>Пароль *</span>
+              <input type="text" name="password" />
+              <div class="input-constraints" id="password-constraints">
+                <div class="constraint">
+                  <img src="materials/design/i-accept.svg" alt="NO" />
+                  <span>Минимум 8 символов</span>
+                </div>
+                <div class="constraint">
+                  <img src="materials/design/i-accept.svg" alt="NO" />
+                  <span>Не может состоять только из цифр</span>
+                </div>
+                <div class="constraint">
+                  <img src="materials/design/i-accept.svg" alt="NO" />
+                  <span>Не должен совпадать с логином</span>
+                </div>
+                <div class="constraint">
+                  <img src="materials/design/i-accept.svg" alt="NO" />
+                  <span>Не должен быть в базе популярных паролей</span>
+                </div>
+              </div>
+            </div>
+            <div class="input-field">
+              <span>Подтвердите пароль</span>
+              <input type="text" name="repeat_password" />
+              <div class="input-constraints" id="repeat-password-constraints">
+                <div class="constraint">
+                  <img src="materials/design/i-accept.svg" alt="NO" />
+                  <span>Пароли не совпадают</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="checkbox-field">
+            <input type="checkbox" name="accept_checkbox" checked/>
+            <span>Даю свое согласие на обработку персональных данных</span>
+          </div>
+          <div class="register-button">
+            <button>
+                <span>Зарегистрировать</span>
+            </button>
+          </div>
+        </div>
+
+
+      </form>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-refs">
+          <a href="">Об авторе</a>
+          <a href="">Технологии</a>
+        </div>
+        <span>@blog, 2022</span>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
