@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-items-wrapper">
+        <img src="materials/design/logo.svg" alt="LogoImg" />
+        <ul class="header-ul">
+          <li class="header-li">
+            <img src="materials/design/i-user.svg" alt="UserImg" />
+          </li>
+          <li class="header-li">
+            <a class="header-link" id="login" href="">Войти</a>
+          </li>
+          <li class="header-li">
+            <a class="header-link" id="register" href="">Зарегистрироваться</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1>Последние публикации</h1>
+      <div class="main-block-wrapper">
+        <div class="content-block-wrapper">
+          <div class="main-cards">
+            <div class="card" data-id="1" data-tags="git console">
+              <img src="materials/content/post-1.png" />
+              <div class="card-content">
+                <span
+                  ><b>Работа с Git в Visual Studio Code</b><br />
+                  Один из способов работать с Гитом.</span
+                >
+                <div class="card-tags">
+                  <button>Git</button>
+                  <button>Консоль</button>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-id="2" data-tags="figma">
+              <img src="materials/content/post-2.png" />
+              <div class="card-content">
+                <span
+                  ><b>Adobe покупают Фигму. Всё пропало?</b><br />
+                  Не факт, но есть разные мнения.</span
+                >
+                <div class="card-tags">
+                  <button><span>Figma</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-id="3" data-tags="study career">
+              <img src="materials/content/post-3.png" />
+              <div class="card-content">
+                <span
+                  ><b>Все научились программировать.</b><br />
+                  А дальше-то что? Ученье — свет.</span
+                >
+                <div class="card-tags">
+                  <button><span>Обучение</span></button>
+                  <button><span>Карьера</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-id="4" data-tags="study">
+              <img src="materials/content/post-4.png" />
+              <div class="card-content">
+                <span
+                  ><b
+                    >Мне тяжело учиться, кто поможет? Попали в патовую
+                    ситуацию?</b
+                  ><br />
+                  Тогда кликайте на статью.</span
+                >
+                <div class="card-tags">
+                  <button><span>Обучение</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-id="5" data-tags="study career">
+              <img src="materials/content/post-5.png" />
+              <div class="card-content">
+                <span
+                  ><b>Ключевые навыки фронтендеров в 2022</b><br />
+                  Ежегодное исследование рынка от HTML Academy.</span
+                >
+                <div class="card-tags">
+                  <button><span>Обучение</span></button>
+                  <button><span>Карьера</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-id="6" data-tags="news">
+              <img src="materials/content/post-6.png" />
+              <div class="card-content">
+                <span
+                  ><b>Фронтенд-новости</b><br />
+                  WAI-ARIA, новинки HTML-форм и 12 ошибок любого
+                  джаваскриптера.</span
+                >
+                <div class="card-tags">
+                  <button><span>Новости</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="load-content-button">Загрузить еще 6</button>
+        </div>
+        <div class="side-headings-wrapper">
+          <h3>Рубрики</h3>
+          <a href="#update_page" class="side-heading" data-tag="study">Обучение</a>
+          <a href="#update_page" class="side-heading" data-tag="career">Карьера</a>
+          <a href="#update_page" class="side-heading" data-tag="figma">Figma</a>
+          <a href="#update_page" class="side-heading" data-tag="console">Консоль</a>
+          <a href="#update_page" class="side-heading" data-tag="git">Git</a>
+          <a href="#update_page" class="side-heading" data-tag="news">Новости</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-refs">
+          <a href="">Об авторе</a>
+          <a href="">Технологии</a>
+        </div>
+        <span>@blog, 2022</span>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
